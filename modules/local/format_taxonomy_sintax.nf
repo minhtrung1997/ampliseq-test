@@ -19,7 +19,7 @@ process FORMAT_TAXONOMY_SINTAX {
 
     script:
     """
-    ${params.sintax_ref_databases[params.sintax_ref_taxonomy]["fmtscript"]} \\
+    ${params.sintax_ref_databases[params.sintax_ref_taxonomy]["fmtscript"]} ${database}\\
 
     #Giving out information
     echo -e "--sintax_ref_taxonomy: ${params.sintax_ref_taxonomy}\\n" >ref_taxonomy_sintax.txt
