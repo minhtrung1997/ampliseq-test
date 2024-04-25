@@ -993,20 +993,20 @@ workflow AMPLISEQ {
     // Save input files in results folder
     //
     if ( params.input ) {
-        file("${params.outdir}/input").mkdir()
-        file("${params.input}").copyTo("${params.outdir}/input")
+        file("${params.outdir}/input/").mkdir()
+        file("${params.input}").copyTo("${params.outdir}/input/")
     }
     if ( params.input_fasta ) {
-        file("${params.outdir}/input").mkdir()
-        file("${params.input_fasta}").copyTo("${params.outdir}/input")
+        file("${params.outdir}/input/").mkdir()
+        file("${params.input_fasta}").copyTo("${params.outdir}/input/")
     }
     if ( params.multiregion ) {
-        file("${params.outdir}/input").mkdir()
-        file("${params.multiregion}").copyTo("${params.outdir}/input")
+        file("${params.outdir}/input/").mkdir()
+        file("${params.multiregion}").copyTo("${params.outdir}/input/")
     }
     if ( params.metadata ) {
-        file("${params.outdir}/input").mkdir()
-        file("${params.metadata}").copyTo("${params.outdir}/input")
+        file("${params.outdir}/input/").mkdir()
+        file("${params.metadata}").copyTo("${params.outdir}/input/")
     }
 
     emit:
