@@ -4,5 +4,5 @@
 
 # Just rename the preformatted file
 # Assumes only one (gzipped) file
-mv * sintaxdb.fa.gz
+mv $1 sintaxdb.fa.gz
 
